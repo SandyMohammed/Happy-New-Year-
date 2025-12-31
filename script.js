@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight + 100;
     ctx.setTransform(1, 0, 0, 1, 0, 0); // reset
     ctx.translate(canvas.width / 2, canvas.height / 2 + canvas.height * 0.1); // رفع ديناميكي
 }
